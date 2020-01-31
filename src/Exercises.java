@@ -11,7 +11,7 @@ public class Exercises {
 			return true;
 		}
 		
-		return false;	// default return value to ensure compilation
+		return false;
 	}
 	
 	public ArrayList<String> endsMeet(ArrayList<String> values, int n) {
@@ -30,7 +30,7 @@ public class Exercises {
 			index++;
 		}
 		
-		return returnMe;	// default return value to ensure compilation
+		return returnMe;
 	}
 	
 	public int difference(ArrayList<Integer> numbers) {
@@ -55,7 +55,7 @@ public class Exercises {
 			}
 		}
 		
-		return max - min;		// default return value to ensure compilation
+		return max - min;
 	}
 	
 	public double biggest(ArrayList<Double> numbers) {
@@ -75,7 +75,7 @@ public class Exercises {
 			}
 		}
 		
-		return max;		// default return value to ensure compilation
+		return max;
 	}
 	
 	public ArrayList<String> middle(ArrayList<String> values) {
@@ -124,7 +124,7 @@ public class Exercises {
 			}
 		}
 		
-		return false;	// default return value to ensure compilation
+		return false;
 	}
 	
 	public boolean everywhere(ArrayList<Integer> numbers, int x) {
@@ -152,7 +152,7 @@ public class Exercises {
 			}
 		}
 
-		return true;	// default return value to ensure compilation
+		return true;
 	}
 	
 	public boolean consecutive(ArrayList<Integer> numbers) {
@@ -186,7 +186,7 @@ public class Exercises {
 			prevRemainder = remainder;
 		}
 		
-		return false;	// default return value to ensure compilation
+		return false;
 	}
 	
 	public boolean balance(ArrayList<Integer> numbers) {
@@ -211,7 +211,7 @@ public class Exercises {
 			}
 		}
 		
-		return false;	// default return value to ensure compilation
+		return false;
 	}
 	
 	public int clumps(ArrayList<String> values) {
