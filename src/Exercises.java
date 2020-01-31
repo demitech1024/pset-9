@@ -90,7 +90,10 @@ public class Exercises {
 		}
 
 		int midIndex = (int)(Math.ceil(values.size() / 2));
-		ArrayList<String> returnMe = {values.get(midIndex - 1), values.get(midIndex), values.get(midIndex + 1)};
+		ArrayList<String> returnMe = new ArrayList<String>();
+		returnMe.add(values.get(midIndex - 1));
+		returnMe.add(values.get(midIndex));
+		returnMe.add(values.get(midIndex + 1));
 
 		return returnMe;
 	}
