@@ -99,7 +99,30 @@ public class Exercises {
 	}
 
 	public boolean increasing(ArrayList<Integer> numbers) {
-		// write your code here
+		if (numbers == null || numbers.size() < 3) {
+			return false;
+		}
+
+		int counter = 0;
+		int currentNum = -1;
+		for (int i = 0; i < numbers.size(); i++) {
+			if (i == 0) {
+				counter = 1;
+				currentNum = numbers.get(i);
+			}
+
+			if (numbers.get(i) == currentNum + 1) {
+				counter++;
+				currentNum = numbers.get(i);
+			} else {
+				counter = 1;
+				currentNum = numbers.get(i);
+			}
+
+			if (counter == 3) {
+				return true;
+			}
+		}
 		
 		return false;	// default return value to ensure compilation
 	}
