@@ -175,7 +175,7 @@ public class Exercises {
 				if (prevRemainder == 0) {
 					inARow++;
 				} else {
-					inARow = 1
+					inARow = 1;
 				}
 			}
 
