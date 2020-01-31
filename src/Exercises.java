@@ -7,13 +7,28 @@ public class Exercises {
 			return false;
 		}
 		
-		// write your code here
+		if (a.get(0) == b.get(0) || a.get(a.size() - 1) == b.get(b.size() - 1)) {
+			return true;
+		}
 		
 		return false;	// default return value to ensure compilation
 	}
 	
 	public ArrayList<String> endsMeet(ArrayList<String> values, int n) {
-		// write your code here
+		if (values == null || values.size() < n || n <= 0) {
+			return new ArrayList<String>();
+		}
+
+		ArrayList<String> returnMe = new ArrayList<String>();
+		for (int i = 0; i < n; i++) {
+			returnMe.set(i, values.get(i));
+		}
+
+		int index = n;
+		for (int i = values.size() - n;  i < values.size(); i++) {
+			returnMe.set(index) = values.get(i);
+			index++;
+		}
 		
 		return null;	// default return value to ensure compilation
 	}
