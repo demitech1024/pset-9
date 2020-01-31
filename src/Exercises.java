@@ -59,7 +59,7 @@ public class Exercises {
 	}
 	
 	public double biggest(ArrayList<Double> numbers) {
-		if (numbers == null || number.size() < 3 || numbers.size % 2 == 0) {
+		if (numbers == null || numbers.size() < 3 || numbers.size() % 2 == 0) {
 			return -1;
 		}
 
