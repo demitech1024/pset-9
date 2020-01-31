@@ -21,16 +21,16 @@ public class Exercises {
 
 		ArrayList<String> returnMe = new ArrayList<String>();
 		for (int i = 0; i < n; i++) {
-			returnMe.set(i, values.get(i));
+			returnMe.add(i, values.get(i));
 		}
 
 		int index = n;
 		for (int i = values.size() - n;  i < values.size(); i++) {
-			returnMe.set(index) = values.get(i);
+			returnMe.add(index, values.get(i));
 			index++;
 		}
 		
-		return null;	// default return value to ensure compilation
+		return returnMe;	// default return value to ensure compilation
 	}
 	
 	public int difference(ArrayList<Integer> numbers) {
